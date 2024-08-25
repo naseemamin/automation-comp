@@ -1,0 +1,124 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hi", "hiya", "howdy", "greetings", "good afternoon", "good morning", "good day", "yo", "hey there", "howdy partner", "salutations", "nice to meet you"],
+      "responses": ["Howdy Partner! How can I help?", "Hello! What can I do for you?", "Hey there! How can I assist you today?"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "introductions",
+      "patterns": ["what is your name", "who are you", "what are you"],
+      "responses": ["I'm Cap Companion! I am a virtual assistant ChatBot designed to help you.", "My name is Cap Companion! I'm your personal assistant."],
+      "threshold": 0.5
+    },
+    {
+      "tag": "weather_function",
+      "patterns": ["how is the weather in", "what's the weather like in", "what is the weather like today"],
+      "responses": ["TRIGGER WEATHER PROCESSOR"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how2_weather",
+      "patterns": ["how do i check the weather", "what prompt checks the weather", "what do i type for you to tell me the weather"],
+      "responses": ["For me to check the weather, provide a prompt like: 'What's the weather like in London'."],
+      "threshold": 0.5
+    },
+    {
+      "tag": "meeting_scheduler_function",
+      "patterns": ["schedule a meeting on the at with about", "book a meeting on the with at with about", "set up a meeting on the with at with about"],
+      "responses": ["TRIGGER MEETING PROCESSOR"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how2_meeting_schedule",
+      "patterns": ["what prompt schedules a meeting for me", "what do i type to make a meeting", "how do i schedule a meeting using you"],
+      "responses": ["For me to schedule you a meeting, provide a prompt like: 'Book a meeting on the 5th of August at 13:30 with Callum McGregor and Salma Mohamud about Terraform'"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "checklist_function",
+      "patterns": ["create a checklist my tasks are to", "make a checklist with the tasks", "I want a checklist my tasks are to"],
+      "responses": ["TRIGGER CHECKLIST PROCESSOR"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how2_checklist",
+      "patterns": ["what prompt makes a checklist", "how do i make a checklist", "what do i type to make a checklist"],
+      "responses": ["For me to make you a checklist, provide a prompt like: 'Create me a checklist my tasks are to 'first' go to the gym, '2' go shopping, 'three' get milk'"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "wiki_function",
+      "patterns": ["tell me about", "what can you tell me about", "what does wiki say", "i want to know more about", "can you summarise the topic of"],
+      "responses": ["TRIGGER WIKI PROCESSOR"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how2_wiki",
+      "patterns": ["how do i wiki something", "how do i use the wiki function", "what prompt uses wiki", "what do i type to wiki a topic"],
+      "responses": ["For me to wiki something, provide a prompt like 'tell me about goldfish'. Ensure the topic is the last word. To Wiki a multi-word topic, put a - between each word, e.g., 'agile-methodology'"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "reminder_function",
+      "patterns": ["reminder to at on the of", "set me an reminder for the at on the of", "create an reminder for at on the of", "send me an to remind me to at on the of"],
+      "responses": ["TRIGGER REMINDER PROCESSOR"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how2_reminder",
+      "patterns": ["how do i send an email reminder", "what prompt sets an email reminder", "what do i type to make an email reminder"],
+      "responses": ["For me to set a reminder, provide a prompt like: 'Remind me to go to the gym at 18:30 on the 5th of August'"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["how are you", "how's it going", "how are things", "whats up", "how are you doing today", "hows your day going", "whats cracking"],
+      "responses": ["I'm doing well, thank you for asking!", "I'm great! How can I assist you today?", "I can't complain, thanks for asking!"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "purpose",
+      "patterns": ["what do you do", "what are you programmed for", "what tasks can you help me with", "what things can you do", "what is your purpose"],
+      "responses": ["Currently the tasks I'm able to undertake are:\n- Setting Email based reminders\n- Responding with voice to a variety of user input\n- Feel free to edit my code to enable me to help with more tasks"],
+      "threshold": 0.5
+    },
+    {
+      "tag": "creators",
+      "patterns": ["who made you", "who programmed you", "what are the names of your creators", "who came up with the idea of you"],
+      "responses": ["My original creators were as follows: Callum McGregor, Salma Mohamud, Naseem Amin, and Jasleen Kaur. Without them, I would not exist."],
+      "threshold": 0.5
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "appreciate it", "i'm grateful", "i owe you one", "you're a life saver", "you're the best", "thx"],
+      "responses": ["You're welcome! I'm here to help.", "You're welcome! Let me know if there's anything else I can assist you with.", "You're welcome! If you have any more questions, feel free to ask."],
+      "threshold": 0.6
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["bye", "goodbye", "see you later", "take care", "until next time", "see you soon", "have a good day", "catch you later", "adios", "so long", "till we meet again"],
+      "responses": ["Goodbye! Have a great day!", "Farewell! Take care.", "Bye! Start me up again if you need any assistance."],
+      "threshold": 0.5
+    },
+    {
+      "tag": "activity",
+      "patterns": ["I have a meeting tomorrow", "i have to do", "i need to remember to", "i can't forget to"],
+      "responses": ["Okay, if you would like me to set you a reminder, please supply your email address, and start your next sentence with the time and date you'd like your reminder to be sent."],
+      "threshold": 0.5
+    },
+    {
+      "tag": "lunch",
+      "patterns": ["help schedule lunch", "when am i free to book lunch"],
+      "responses": ["Great! I'll look at your calendar to see when is best to have your lunch."],
+      "threshold": 1.0
+    },
+    {
+      "tag": "talent_cloud_profile",
+      "patterns": ["what is a talent cloud profile", "definition of talent cloud profile", "purpose of talent cloud"],
+      "responses": ["A Talent Cloud profile is an internal CV where clients can see your skillsets and check if they align with any available roles. To view your Talent Cloud profile, follow this link: https://app.whoz.com/workspace/6365162ce6d82534f9c15d3c/personal/your/dashboard"],
+      "threshold": 0.5
+    }
+  ]
+}
